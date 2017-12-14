@@ -15,7 +15,7 @@
 <h1>ERROR 404</h1>
 <h2>Page 404 en construction <br/> ♥ Visuel à venir ♥</h2>
 
-<a href="../menu/menu.php">Retour au menu principal</a>
+<a href="menuPrincipal.php">Retour au menu principal</a>
 </body>
 
 </html>
