@@ -3,6 +3,7 @@
 
 
 $messErreur = '';
+$resultatOK = "";
 //est ce que j'ai des données
 if(!empty($_POST)){
 
@@ -55,12 +56,11 @@ if(!empty($_POST)){
 			$query .= 'VALUES ('.$db->quote($_POST["partie"]).','.$db->quote($_POST["titre"]).','.$db->quote($_POST["html"]).','.$db->quote($_POST["css"]).','.$db->quote($imageOK).',NOW());';
 		}
 
-
 		$resultat_insert = $db->exec($query);
 
 		
 		if($resultat_insert == 1){
-			header("location: partie.php?id=".$db->quote($_POST["partie"]));
+			$resultatOK = "Chapitre modifié !";
 		}
 		else{
 			if(isset($_POST['id']) && is_numeric($_POST['id'])){
