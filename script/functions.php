@@ -15,12 +15,12 @@
     }
         //recupere les différents elements qui composent une partie : numero, titre, description, image et musique
         //par ID de partie 
-    function getPartie($select){
+    function getPartie(){
         global $db;
 
         $partie = array();
         
-        $query = 'SELECT '.$select.' FROM partie WHERE id='.$db->quote($_GET['id']);
+        $query = 'SELECT * FROM partie WHERE id='.$db->quote($_GET['id']);
         $resultat = $db->query($query);
         $partie = $resultat->fetch(); 
 
@@ -63,12 +63,12 @@
 
         //recupere les différents elements qui composent un chapitre : titre, image, html et css
         //par ID de chapitre 
-    function getChp($select){
+    function getChp(){
         global $db;
 
         $chp = array();
         
-        $query = 'SELECT '.$select.' FROM chapitre WHERE id='.$db->quote($_GET['id']);
+        $query = 'SELECT * FROM chapitre WHERE id='.$db->quote($_GET['id']);
         $resultat = $db->query($query);
         $chp = $resultat->fetch(); 
 
