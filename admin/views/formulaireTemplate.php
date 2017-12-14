@@ -5,6 +5,9 @@ include('creationModification.php');
 ?>
 
 <main class="main">
+<?php if(!empty($resultatOK)): ?>
+	<h2><?= $resultatOK ?></h2>
+	<?php else : ?>
 
 	<?php if(empty($chp)): ?>
 	<h2>Creation</h2>
@@ -74,7 +77,7 @@ include('creationModification.php');
 
 			<?php if(empty($chp)): ?>
 			<input id="field_title" type="submit" value="Ajouter"/>
-			<input type="button" name="annuler" value="Annuler" />
+			<input type="button" name="annuler" onclick="window.location.replace('index.php')" value="Annuler" />
 			<?php else: ?>
 			<input id="field_title" type="submit" value="Modifier"/>
 			<!-- <input type="button" name="annuler" value="Annuler" /> -->
@@ -84,7 +87,7 @@ include('creationModification.php');
 	</div>
 
 	</form>
-
+<?php endif ?>
 
 <br/>
 <a class="retourListe" href="index.php">Retour index</a>
