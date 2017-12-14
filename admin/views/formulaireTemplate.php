@@ -6,10 +6,6 @@ include('creationModification.php');
 
 <main class="main">
 
-<?php if($erreur) : ?>
- 	<h2><?= $erreur ?> </h2>
- 
-<?php else : ?>
 	<?php if(empty($chp)): ?>
 	<h2>Creation</h2>
 	
@@ -88,7 +84,6 @@ include('creationModification.php');
 	</div>
 
 	</form>
-<?php endif ?>
 
 
 <br/>
