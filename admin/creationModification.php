@@ -7,12 +7,7 @@ $messErreur = '';
 if(!empty($_POST)){
 
 	//récupérer les données
-	// echo 'je traite le form ';
-	// echo "print_r post : ";
-	// print_r($_POST);
-
-	//je valide le form
-
+	//valide le form
 	//s'il est valide
 	$erreur = validerForm($_POST);
 
@@ -37,7 +32,6 @@ if(!empty($_POST)){
 							  `date` = NOW()';
 
 				$query .= 'WHERE `chapitre`.`id` = '.$db->quote($_POST["id"]).';';
-				// echo $query;
 			}
 			//sinon il fera la meme chose mais sans l'image
 			else{
@@ -49,13 +43,11 @@ if(!empty($_POST)){
 							  `date` = NOW()';
 
 				$query .= 'WHERE `chapitre`.`id` = '.$db->quote($_POST["id"]).';';
-				// echo $query;
 			}
 
 		}
 
 		else{
-			// echo "on est en création"; exit;
 			//rectification du dossier source des img
 			$imageOK = $_FILES['image']['name'];
 			//j'insère en base			
@@ -63,11 +55,9 @@ if(!empty($_POST)){
 			$query .= 'VALUES ('.$db->quote($_POST["partie"]).','.$db->quote($_POST["titre"]).','.$db->quote($_POST["html"]).','.$db->quote($_POST["css"]).','.$db->quote($imageOK).',NOW());';
 		}
 
-		var_dump($db);
-		var_dump($query);
+
 		$resultat_insert = $db->exec($query);
-		// echo $resultat_insert . "<br/>Resultat : ";
-		var_dump($resultat_insert);
+
 		
 		if($resultat_insert == 1){
 			header("location: partie.php?id=".$db->quote($_POST["partie"]));

@@ -4,11 +4,10 @@ include('views/headerAdmin.php');
 ?>
 
 <?php
-// var_dump($_GET);
 $messErreur = "";
 
 if(isset($_GET['id']) && is_numeric($_GET['id'])){
-	$chp = getChp('*');
+	$chp = getChp();
 
 	if(isset($_POST['suppr'])){
 		
