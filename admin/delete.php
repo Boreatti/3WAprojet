@@ -16,7 +16,6 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
 			$resultat_delete = $db->exec($query_delete);
 			
 			if ($resultat_delete > 0) {
-					echo "Nombre de lignes suppirmées : " . $resultat_delete . "<br/>";
 					header("location: partie.php?id=". $chp['partie']);
 				}		
 	} 
