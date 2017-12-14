@@ -243,7 +243,7 @@ F   A       A  CCCC EEEEE BBBBB     OO       OO    K   K   ::
                 </br></br>
                 A partir de ce point de vue, vous avez accès aux cinq grandes époques de l'histoire. Elles peuvent être lues dans n'importe quel ordre, cela n'a pas d'incidence sur la compréhension. Chaque époque est elle-même découpée en chapitres qui eux doivent être lus dans l'ordre.  
                 </br></br>
-                Trouvez-les dans l'image et visitez l'endroit qui vous fait envie ou <a href="http://localhost/boucher_morgane_N7_finEtude_3WA/public_html/">revoyez l'intro</a>.</p>
+                Trouvez-les dans l'image et visitez l'endroit qui vous fait envie ou <a href="index.php">revoyez l'intro</a>.</p>
                  <img id="flecheBas" src="img/flecheBas.png">
             </div>
 

@@ -1,6 +1,6 @@
 <?php include('script/init.php'); 
 //Recuperer la liste des chapitres
-$listeChp = getAllChp(); 
+$listeChp = getAllIdChp(); 
 //Recuperer la liste des partie
 $allParties = getAllParties();
 ?>
