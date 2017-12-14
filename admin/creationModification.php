@@ -60,7 +60,7 @@ if(!empty($_POST)){
 
 		
 		if($resultat_insert == 1){
-			$resultatOK = "Chapitre modifié !";
+			$resultatOK = "♥ Succès ♥ !";
 		}
 		else{
 			if(isset($_POST['id']) && is_numeric($_POST['id'])){
