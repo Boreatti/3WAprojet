@@ -29,7 +29,10 @@ INSERT INTO `chapitre` (`id`, `partie`, `titre`, `image`, `html`, `css`, `date`)
 (8, 2, 'Chapitre 2 - Le fond du gouffre', 'testCH4.jpg', '', '', '2017-12-01 14:01:15'),
 (9, 4, 'Chapitre 2 - Tango', 'dominoFace.png', '', '', '2017-12-01 14:01:15'),
 (10, 4, 'Chapitre 3 - Lambada', 'roughDK.jpg', '', '', '2017-12-01 14:01:15'),
-(11, 4, 'Chapitre 4 - Macumba', 'testCH1.png', '', '', '2017-12-01 14:01:15');
+(11, 4, 'Chapitre 4 - Macumba', 'testCH1.png', '', '', '2017-12-01 14:01:15'),
+(12, 4, 'Chapitre 5 - Java', 'testCH2.png', '', '', '2017-12-01 14:01:15'),
+(13, 4, 'Chapitre 6 - Charleston', 'testCH4.jpg', '', '', '2017-12-01 14:01:15'),
+(14, 4, 'Chapitre 7 - Country', 'testCH3.jpg', '', '', '2017-12-01 14:01:15');
 ​
 -- --------------------------------------------------------
 ​
