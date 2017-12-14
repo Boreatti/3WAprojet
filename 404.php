@@ -12,8 +12,8 @@
 
 <body>
 
-<h1>ERROR 404</h1>
-<h2>Page 404 en construction <br/> ♥ Visuel à venir ♥</h2>
+<h1>♥♥♥ ♥♥♥ ERROR 404 ♥♥♥ ♥♥♥</h1>
+<h2> ♥ Veuillez vérifier l'url ♥ </h2>
 
 <a href="menuPrincipal.php">Retour au menu principal</a>
 </body>
