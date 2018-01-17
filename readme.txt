@@ -10,6 +10,12 @@ Langages utilisés :
 -PHP (insertions d'éléments redondants (boutons de menu...) + affichage chapitres)
 -SQL (gestion des chapitres en BDD)
 
+Installation :
+- créer un utilisateur et la bdd associée dans phpmyadmin (ne pas oublier de récupérer le mot de passe)
+- recupérer le fichier bdd/bdd.sql afin de construire la bdd en local
+- dans le dossier script, renommer le fichier config.example.php en config.php
+- remplacer les * par vos données de connexion
+- Mot de passe admin : chattons
 
 Nous vous rappelons que les images et textes présents sur ce site ne sont pas libres de droit.
 
